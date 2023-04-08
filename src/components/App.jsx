@@ -10,7 +10,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 //!После рефакторинга на Хуках
 export const App = () => {
   const [contacts, setContacts] = useState(
-    JSON.parse(window.localStorage.getItem('contacts')) ?? [],
+    JSON.parse(window.localStorage.getItem('contacts')) ?? []
   );
   const [filter, setFilter] = useState('');
 
